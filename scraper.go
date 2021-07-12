@@ -44,6 +44,12 @@ func New() *Scraper {
 	}
 }
 
+// SetClient sets http client
+func (s *Scraper) SetClient(c *http.Client) *Scraper {
+	s.client = c
+	return s
+}
+
 // SetSearchMode switcher
 func (s *Scraper) SetSearchMode(mode SearchMode) *Scraper {
 	s.searchMode = mode
