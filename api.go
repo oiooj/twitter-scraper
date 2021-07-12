@@ -8,7 +8,7 @@ import (
 	"time"
 )
 
-const bearerToken string = "AAAAAAAAAAAAAAAAAAAAAFR3JwEAAAAAEquyLtEZhuvH7jVLCzrba2Wearo%3DhIcSZNPXNWb3ZOrf2CcexWQbQgNPzhp7MInFZNsjihbzY9KRFe"
+const bearerToken string = "AAAAAAAAAAAAAAAAAAAAADhBKgEAAAAARo7c8DneV0DIRTuNrQCCKB70AyA%3DTj2trhrBBjNUIR6BuUIK3QUT8YvCajaiQwF7QqEzKvYKkDvSAf"
 
 // RequestAPI get JSON from frontend API and decodes it
 func (s *Scraper) RequestAPI(req *http.Request, target interface{}) error {
