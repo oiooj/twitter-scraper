@@ -5,10 +5,11 @@ import (
 	"fmt"
 	"io/ioutil"
 	"net/http"
+	"os"
 	"time"
 )
 
-const bearerToken string = "AAAAAAAAAAAAAAAAAAAAADhBKgEAAAAARo7c8DneV0DIRTuNrQCCKB70AyA%3DTj2trhrBBjNUIR6BuUIK3QUT8YvCajaiQwF7QqEzKvYKkDvSAf"
+var bearerToken string = os.Getenv("TWITTER_TOKEN")
 
 // RequestAPI get JSON from frontend API and decodes it
 func (s *Scraper) RequestAPI(req *http.Request, target interface{}) error {
